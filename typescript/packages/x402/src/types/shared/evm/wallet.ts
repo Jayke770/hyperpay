@@ -26,6 +26,8 @@ import {
   abstractTestnet,
   story,
   eduChain,
+  hyperEvm,
+  hyperliquidEvmTestnet,
 } from "viem/chains";
 import { skaleBaseSepolia } from "../custom-chains";
 import { privateKeyToAccount } from "viem/accounts";
@@ -235,6 +237,10 @@ export function getChainFromNetwork(network: string | undefined): Chain {
       return iotexTestnet;
     case "skale-base-sepolia":
       return skaleBaseSepolia;
+    case "hyperevm":
+      return hyperEvm;
+    case "hyperliquidEvmTestnet":
+      return hyperliquidEvmTestnet;
     default:
       throw new Error(`Unsupported network: ${network}`);
   }
