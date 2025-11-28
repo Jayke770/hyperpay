@@ -8,8 +8,8 @@ import {
   VerifyResponse,
   createConnectedClient,
   createSigner,
-} from "x402/types";
-import { verify } from "x402/facilitator";
+} from "@hyperpay/x402/types";
+import { verify } from "@hyperpay/x402/facilitator";
 import { ALLOWED_NETWORKS } from "../config";
 
 type VerifyRequest = {
