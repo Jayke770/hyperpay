@@ -1,11 +1,11 @@
-# x402
+# @hyperpay/x402
 
 Core TypeScript implementation of the x402 Payment Protocol. This package provides the foundational types, schemas, and utilities that power all x402 integrations.
 
 ## Installation
 
 ```bash
-npm install x402
+npm install @hyperpay/x402
 ```
 
 ## Overview
