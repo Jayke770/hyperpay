@@ -1,21 +1,21 @@
 import { NextFunction, Request, Response } from "express";
 import { beforeEach, describe, expect, it, vi } from "vitest";
-import { findMatchingRoute } from "x402/shared";
-import { getPaywallHtml } from "x402/paywall";
-import { exact } from "x402/schemes";
+import { findMatchingRoute } from "@hyperpay/x402/shared";
+import { getPaywallHtml } from "@hyperpay/x402/paywall";
+import { exact } from "@hyperpay/x402/schemes";
 import {
   PaymentMiddlewareConfig,
   PaymentPayload,
   RoutesConfig,
   FacilitatorConfig,
   RouteConfig,
-} from "x402/types";
-import { useFacilitator } from "x402/verify";
+} from "@hyperpay/x402/types";
+import { useFacilitator } from "@hyperpay/x402/verify";
 import { paymentMiddleware } from "./index";
 import { Address as SolanaAddress } from "@solana/kit";
 
 // Mock dependencies
-vi.mock("x402/verify", () => ({
+vi.mock("@hyperpay/x402/verify", () => ({
   useFacilitator: vi.fn().mockReturnValue({
     verify: vi.fn(),
     settle: vi.fn(),
