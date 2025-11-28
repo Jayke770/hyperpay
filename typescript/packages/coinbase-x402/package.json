@@ -1,5 +1,5 @@
 {
-  "name": "@coinbase/x402",
+  "name": "@hyperpay/coinbase-x402",
   "version": "0.7.3",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
@@ -19,7 +19,7 @@
   "keywords": [],
   "license": "Apache-2.0",
   "author": "Coinbase Inc.",
-  "repository": "https://github.com/coinbase/x402",
+  "repository": "https://github.com/jayke770/hyperpay",
   "description": "x402 Payment Protocol",
   "devDependencies": {
     "@eslint/js": "^9.24.0",
